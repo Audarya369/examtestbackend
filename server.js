@@ -21,10 +21,6 @@ app.use(userRouter);
 app.use(questionRouter);
 app.use(examRouter);
 
-app.get("/", (req, res) => {
-  res.send("Server is running");
-});
-
 const PORT = 3002;
 app.listen(PORT, () => {
   console.log(`Server Started at ${PORT}`);
